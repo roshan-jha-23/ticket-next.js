@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-bold;
+  }
+  h1 {
+    @apply text-5xl mb-8;
+  }
+  h2 {
+    @apply text-4xl mb-7;
+  }
+  h3 {
+    @apply text-3xl mb-6;
+  }
+  h4 {
+    @apply text-2xl mb-5;
+  }
+  p {
+    @apply leading-normal;
+  }
+  form {
+    @apply flex flex-col items-center justify-start w-full max-w-sm px-4 py-6 my-2;
+  }
+  label {
+    @apply block uppercase tracking-wide text-xs font-bold mb-2;
+  }
+  input,
+  select,
+  textarea {
+    @apply m-1 rounded bg-card p-1;
+  }
+}
+
+@layer components {
+  .icon {
+    @apply text-default-text text-xl;
+  }
+  .btn {
+    @apply hover:no-underline bg-blue-accent hover:bg-blue-accent-hover tracking-wider w-full text-center text-nav font-bold cursor-pointer uppercase px-4 py-2 rounded-md transition-colors block;
+  }
+}
